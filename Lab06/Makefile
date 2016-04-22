@@ -9,3 +9,6 @@ clean :
 	-$(RM) $(objects) $(programs) *~
 
 all : $(programs)
+
+glowny.o : funkcje.h
+glowny : funkcje.o glowny.o
