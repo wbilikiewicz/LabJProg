@@ -69,7 +69,8 @@ lista odwroc(lista lis) {
   lista pom = NULL;
   char slowo[MAX_DL_SLOWA];
   while (! pusta(lis)) {
-    strcpy(slowo, pierwsze(lis)); lis = reszta(lis);
+    strcpy(slowo, pierwsze(lis)); 
+    lis = reszta(lis);
     pom = dolacz(slowo, pom);
   }
   return pom;
@@ -81,6 +82,5 @@ int main () {
   lista lis = NULL;
   lis = dolacz("abc", dolacz("def", dolacz("ghi", lis)));
   druk(odwroc(lis));
-  return 0;
 }
   
