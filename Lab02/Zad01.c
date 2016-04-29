@@ -6,7 +6,7 @@ int main ()
   char znak;
   int c = 0;
   int k, i;
-  fp = fopen("bity2.abw", "r");
+  fp = fopen("/home/pracinf/stefan/public_html/Dydaktyka/JezProg/Slajdy/Labs05/baza_danych", "r");
   while (znak != EOF)
   {
     znak = fgetc(fp);
