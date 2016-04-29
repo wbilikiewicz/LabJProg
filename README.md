@@ -15,10 +15,10 @@ S. Sokołowski
 
 1. [Laboratorium 02]  (/Lab02):
 
-  * [x] [Zad00.c](Lab02/Zad00.c)
- 	* [x] [Zad01.c](Lab02/Zad01.c)
- 	* [x] [Zad02.c](Lab02/Zad02.c)
-  * [x] [Zad02A.c](Lab02/Zad02A.c)
+  	* [x] [Zad00.c](Lab02/Zad00.c)
+  	* [x] [Zad01.c](Lab02/Zad01.c)
+  	* [x] [Zad02.c](Lab02/Zad02.c)
+  	* [x] [Zad02A.c](Lab02/Zad02A.c)
 
 1. [Laboratorium 03] (/Lab03)
  	* [x] [Zad01.c](Lab03/Zad01.c)
@@ -42,7 +42,7 @@ S. Sokołowski
 
 
 1. [Laboratorium 04](/Lab04)
-  * [x] [Zad01.c](Lab04/Zad01.c)
+  	* [x] [Zad01.c](Lab04/Zad01.c)
 
 1. [Laboratorum 05] (/Lab05)
  	* [x] [Zad01.c](Lab05/Zad01.c)
@@ -50,9 +50,9 @@ S. Sokołowski
 
 1. [Laboratorum 06] (/lab06)
  	* [x] [Zad01.c](Lab06/Zad01.c)
-  * [x] [glowny.c](Lab06/glowny.c)
-  * [x] [funkcje.c](Lab06/funkcje.c)
-  * [x] [funkcje.h](Lab06/funkcje.h)
+  	* [x] [glowny.c](Lab06/glowny.c)
+  	* [x] [funkcje.c](Lab06/funkcje.c)
+  	* [x] [funkcje.h](Lab06/funkcje.h)
 
 1. [Laboratorum 07] (/Lab07)
  	* [x] [Zad01.c](Lab07/Zad01.c)
