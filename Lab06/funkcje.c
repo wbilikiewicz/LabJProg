@@ -197,14 +197,28 @@ Boolean  form5 (drzewo* drz) {
 /***************************************************/
 
 char  wylicz(drzewo drz, char tab[26]) {
-  if ( drz -> tp == ss ) return drz -> st
-  else if ( drz -> tp == zz ) return drz -> lex
-  else {
-    char l = wylicz(lewe tab)
-    r = wylicz(prawe tab)
+  if ( drz -> tp == zz)
+    return tab [drz -> zm - 97];
+  else if (drz -> tp == ss)
+    return drz -> st;
+  else if (drz -> tp == dd && drz -> sp == nie)
+    if ( wylicz (drz -> prawy, tab) == '0' ) return '1';
+    else return '0';
+  else if ( drz -> tp == dd && drz -> sp == ii)
+    if (( wylicz (drz -> lewy, tab) == '1') && (wylicz (drz -> prawy, tab) == '1')) return '1';
+    else return '0';
+  else if ( drz -> tp == dd && drz -> sp == lub)
+    if ((wylicz (drz -> lewy, tab) == '0') && (wylicz (drz -> prawy, tab) == '0')) return '0';
+    else return '1';
+  else if ( drz -> tp == dd && drz -> sp == jesli)
+    if ((wylicz (drz -> lewy, tab) == '1') && (wylicz(drz -> prawy, tab) == '0')) return 0;
+    else return '1';
+  else if ( (drz -> tp == dd) && (drz -> sp == wttw) ) {
+    if(((wylicz(drz->lewy, tab)=='1') && (wylicz(drz->prawy, tab)=='1')) || ((wylicz(drz->lewy, tab)=='0')\
+    && (wylicz(drz->prawy, tab)=='0'))) return '1';
   }
-  //printf("\n  NA RAZIE FUNKCJA wylicz NIE JEST NAPISANA\n\n");
-  return '\n';
+  else
+    return '2';
 }
 
 /***************************************************/
