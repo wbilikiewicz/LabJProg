@@ -10,7 +10,7 @@ void pot2_inic()
 }
 int bit(int numer, char znak)
 {
-  if (znak & pot2[numer] == 0)
+  if ((znak & pot2[numer]) == 0)
   return 0;
   else return 1;
 }
