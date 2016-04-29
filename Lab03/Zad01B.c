@@ -19,11 +19,11 @@ int main ()
   float c, C;
   c = FLT_MIN;
   C = FLT_MAX;
-  h = (int)FLT_MAX;
+  int h = FLT_MAX;
   double y, Y;
   y = DBL_MIN;
   Y = DBL_MAX;
-  i = (int)DBL_MAX;
+  int i = DBL_MAX;
   long double d, D;
   d = LDBL_MIN;
   D = LDBL_MAX;
