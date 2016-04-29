@@ -60,3 +60,5 @@ int main(int argnum, char* arg[]) {
     printf("\n  wartosc: %c\n\n", wylicz(drz, tab));
   }
   else blad("nie formula");
+  if (lex != EOF && lex != '\n') blad("smieci na koncu");
+}
