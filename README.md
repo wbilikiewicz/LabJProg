@@ -63,6 +63,7 @@ S. Sokołowski
  	* [x] [Zad02.c](Lab08/Zad02.c)
  	* [x] [Zad03.c](Lab08/Zad03.c)
  	* [x] [Zad04.c](Lab08/Zad04.c)
+
 1. [Laboratorum 09] (/Lab09)
  	* [x] [Zad01.c](Lab09/Zad01.c)
  	* [x] [Zad02.c](Lab09/Zad02.c)
