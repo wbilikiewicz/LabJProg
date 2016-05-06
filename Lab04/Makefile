@@ -1,3 +1,5 @@
+sources = Zad01.c
+
 programs = $(basename $(sources))
 objects = $(addsuffix .o, $(programs))
 
