@@ -1,4 +1,4 @@
-sources = zad01 funkcje glowny
+sources = Zad01.c funkcje.c glowny.c funkcje.h
 
 programs = $(basename $(sources))
 objects = $(addsuffix .o, $(programs))
