@@ -56,9 +56,41 @@ int main(int argnum, char* arg[]) {
   else  poziom=2;
 
   nowy_lex();
-  if (form0(&drz)) {
-    printf("\n  wartosc: %c\n\n", wylicz(drz, tab));
+  if (form0(&drz)) 
+  {
+    int i;
+    for(i=0;i<1024 && (tautologia==1 || spelnialna==0);i++)
+    {
+      if(i%2==1) tab[0]='1'; else tab[0]='0';
+      if((i>>1)%2==1) tab[1]='1'; else tab[1]='0';
+      if((i>>2)%2==1) tab[2]='1'; else tab[2]='0';
+      if((i>>3)%2==1) tab[3]='1'; else tab[3]='0';
+      if((i>>4)%2==1) tab[4]='1'; else tab[4]='0';
+      if((i>>5)%2==1) tab[5]='1'; else tab[5]='0';
+      if((i>>6)%2==1) tab[6]='1'; else tab[6]='0';
+      if((i>>7)%2==1) tab[7]='1'; else tab[7]='0';
+      if((i>>8)%2==1) tab[8]='1'; else tab[8]='0';
+      if((i>>9)%2==1) tab[9]='1'; else tab[9]='0';
+      if(wylicz(drz, tab)=='0')
+      {
+        if(tautologia==1)
+        {
+          tautologia=0;
+          printf("\nNie jest tautologia, bo dla wartosciowania: a:%c b:%c c:%c d:%c e:%c f:%c g:%c h:%c i:%c j:%c wartosc wyrazenia jest rowna 0\n",tab[0],tab[1],tab[2],tab[3],tab[4],tab[5],tab[6],tab[7],tab[8],tab[9]);
+        }
+      }
+      else
+      {
+        if(spelnialna==0)
+        {
+          spelnialna=1;
+          printf("\nJest spelnialna, bo dla wartosciowania: a:%c b:%c c:%c d:%c e:%c f:%c g:%c h:%c i:%c j:%c wartosc wyrazenia jest rowna 1\n",tab[0],tab[1],tab[2],tab[3],tab[4],tab[5],tab[6],tab[7],tab[8],tab[9]);
+        }
+      }
+    }
   }
   else blad("nie formula");
-  if (lex != EOF && lex != '\n') blad("smieci na koncu");
+  printf("\nTautologia: %s\n", tautologia ? "TAK" : "NIE");
+  printf("Spelnialna: %s\n\n", spelnialna ? "TAK" : "NIE");
+  if(lex!=EOF && lex!='\n') blad("smieci na koncu");
 }
