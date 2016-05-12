@@ -95,43 +95,65 @@ double  zesp_abs (zespol zz){
   modul = sqrt(zz.rea * zz.rea + zz.ima * zz.ima);
   return modul;
 }
- zespol e_do_urojonej (double r){
-   zespol z;
-   z.rea = cos(r);
-   z.ima = sin(r);
-   return z;
- }
-void zesp(zespol z){
-	double e;
-  e = 2,71828182;
-  double pom;
-  pom = cos(M_PI );
-  
+zespol euler(){
+    zespol z;
+    z.rea = cos(M_PI);
+    z.ima = sin(M_PI);
+    return z;
 
-  double temp;
-  temp = pom +1;
-  printf(" \n pom %lf",temp);
-  if (temp==0)
-  printf("\n Zgadza sie");
-  else
-  printf("\nNie zgadza siê");
-  
-	
-} 
- /****************************************************************/
+}
 
+zespol jedynka(){
+	zespol jeden;
+	jeden.rea = 1;
+	jeden.ima = 0;
+	return jeden;
+}
+
+zespol zero(){
+	zespol zero;
+	zero.rea = 0;
+	zero.ima = 0;
+	return zero;
+}
+
+zespol zesp_exp(zespol z){
+	zespol suma = zero();
+	zespol skl = jedynka();
+	int i;
+	for(i=1;i<1000000;i++){
+		suma = zesp_dodac(suma,skl);
+		skl = zesp_dziel(zesp_razy(skl,z),i);
+	}
+	return suma;
+}
 
 int main () {
   zespol  z1, z2;
-  double r;
+  zespol leuler = euler();
+  zespol ljedynka = jedynka();
+  zespol lew_str = zesp_dodac(zesp_exp(pi_i),ljedynka); 
+
+
   printf("\n z1 == "); z1 = zesp_get();
   printf(" z2 == "); z2 = zesp_get();
+
   printf("\n z1+z2 == "); zesp_print(zesp_dodac(z1, z2));
   printf("\n z1-z2 == "); zesp_print(zesp_odjac(z1, z2));
   printf("\n z1*z2 == "); zesp_print(zesp_razy(z1, z2));
+  printf("\n z1 == "); zesp_print(zesp_sprzez(z1));
   printf("\n |z1+z2| == %.4lf\n\n", zesp_abs(zesp_dodac(z1, z2)));
-  scanf("%lf", &r);
-  printf("\n exp(%lf*i) == ", r); zesp_print(e_do_urojonej(z1));
-  zesp(z1);
-  return 0;
+  printf("Tozsamosc Eulera: \n");
+  zesp_print(leuler);
+  printf(" + ");
+  zesp_print(ljedynka);
+  printf(" = ");
+  zesp_print(zesp_dodac(leuler, ljedynka));
+  printf("\n");
+
+  zesp_print(zesp_exp(leuler));
+  printf("\n");
+  zesp_print(lew_str);
+  printf("\n");
+
 }
