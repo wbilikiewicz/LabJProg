@@ -30,12 +30,38 @@ void  utworz_spis(void) {
 }
 
 //=======================================================
-
-void  sortuj_spis(void) {
+int compare(const void *s1, const void *s2, void *arg)
+  {
+    osoba *o1 = (osoba *)s1;
+    osoba *o2 = (osoba *)s2;
+    int *n = (int *)arg;
+    switch ( *n ) {
+      case 1:
+        return strcmp(o1 -> nazwisko, o2 -> nazwisko);
+        break;
+      case 2:
+        return strcmp(o1 -> imie, o2 -> imie);
+        break;
+      case 3:
+        if ( o1 -> pensja > o2 -> pensja) {
+          return -1;
+        }
+        break;
+      default:
+      break;
+    }
+    return 2;
+}
+// powyzsza funkcja generuje bez instrukcji return 2; ostrzerzenie -Wreturn-type
+//=======================================================
   /* sortuje  spis  alfabetycznie wg nazwisk,
      a w przypadku rownych nazwisk wg imion
   */
-
+void  sortuj_spis() {
+  int opcja;
+  printf("Jak chcesz posortować spis? (1) nazwisko, (2) imie, (3) pensja : \n");
+  scanf("%d",&opcja);
+  qsort_r ( spis, IL_OSOB, sizeof(osoba), compare, &opcja);
 }
 
 //=======================================================
