@@ -1,0 +1,82 @@
+/*PODSTAWOWE USTAWIENIA*/
+body {font-family: "Comic Sans MS", cursive, sans-serif; background: linear-gradient(236deg, #98e7ff, #d4d4d4); }
+h1 {font-size: 100px; text-align: center; text-decoration: underline; text-transform: capitalize; letter-spacing: 3px; word-spacing: 10px; text-shadow: 3px 3px #621d1d;} 
+p  {width: 198px;height: 5px;margin-top: 0px; font-size: 20px; }
+h2 {font-size: 50px; text-align: center; text-decoration: underline;}
+h3 {font-size: 25px; text-align: center; text-decoration: none;}
+h4 {font-size: 18; text-align: justify; font-weight: normal;}
+li {font-size: 18; }
+li::first-letter {font-size: 25; }
+
+#container {width: 1050px; margin: 0 auto;}
+#menu {display: table; padding: 0 20px 0; margin: 0 auto; overflow: hidden; font-size: 17px; background: #242424;}
+#menu li {list-style-type: none; margin: 0 auto; float: left; }
+#menu li:hover {background: #404040;}
+#menu li a {display: block; color: silver; text-decoration: none; padding: 10px 20px 10px;}
+#menu li a:hover {background: #404040; color: white;}
+#menu li li a {width: 180px;}
+#menu li ul {overflow: hidden; display: none; background: #242424;}
+#menu li:hover ul {position: absolute; padding: 0; display: block; width: 200px;}
+#menu *:hover {transition: 0.5s ease-in;}
+ 
+/*ZAOKRĄGLONE ROGI*/
+#menu {border-radius: 3px;}
+#menu li ul {border-radius: 0 0 8px 8px;}
+
+/*SOCIALE*/
+ul.social { list-style: none; }
+ul.social li { float: left; margin-left: 5px; }
+ul.social li a {
+	width: 24px;
+	height: 24px;
+	display: block;
+	text-indent: -99999px;
+	background: url('images/light-social.png') no-repeat top left;
+}
+ul.social li.facebook a	{ background-position: 0px 0px; }
+ul.social li.facebook a:hover { background-position: -24px 0px; }
+ul.social li.twitter a { background-position: 0px -24px; }
+ul.social li.twitter a:hover { background-position: -24px -24px; }
+ul.social li.dribbble a	{ background-position: 0px -48px; }
+ul.social li.dribbble a:hover { background-position: -24px -48px; }
+ul.social li.google a { background-position: 0px -72px; }
+ul.social li.google a:hover { background-position: -24px -72px; }
+ul.social li.flickr a { background-position: 0px -96px; }
+ul.social li.flickr a:hover { background-position: -24px -96px; }
+ul.social li.rss a { background-position: 0px -120px; }
+ul.social li.rss a:hover{ background-position: -24px -120px; }
+ul.social li.email a { background-position: 0px -144px; }
+ul.social li.email a:hover { background-position: -24px -144px; }
+
+/*BOXY*/
+.box {
+	background-color: #fff;
+	border: 1px solid #d4d4d4;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 4px #ddd;
+	-moz-box-shadow: 0px 1px 4px #ddd;
+	box-shadow: 0px 3px 4px #ddd;
+}
+div.one_fourth {
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 25px;
+	width: 20%;
+  height: 24%;
+}
+
+/*CONTENT*/
+#cwiczenia1, #cwiczenia2 { font-size:18; background: #F0F0F0; padding: 20px; border: 5px solid #640000; margin: 20px; -webkit-box-shadow: 8px 8px 8px #777; text-align: justify; }
+#cwiczenia1 li, #cwiczenia2 li { font-size:18; margin-left: 15px; }
+#tekst1, #tekst2, #tekst3 {background: #F0F0F0; padding: 25px; border: 5px solid #640000; margin: 20px; -webkit-box-shadow: 8px 8px 8px #777; text-align: justify; }
+#tekst2 li {font-size:18; margin-bottom:15px; }
+#tekst1 li, #tekst3 li {font-size:18; margin-bottom:30px; }
+#box1 { font-size:18; background: #F0F0F0; padding: 25px; border: 5px solid #640000; margin: 20px; -webkit-box-shadow: 8px 8px 8px #777; text-align: justify; }
+#box1 li { margin-bottom:15px; }
+
+/* LINKI */
+a:link {color: black; background-color:transparent; text-decoration:none}
+a:hover {color: red; background-color:transparent; text-decoration:underline}
+a:visited {color: black; background-color:transparent; text-decoration:none}
