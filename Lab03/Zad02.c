@@ -1,9 +1,10 @@
+// W każdym typie liczbowym znaleźć możliwie małe dane, na których wynik jakiegoś działania matematycznego jest już niepoprawny.
+
 #include <stdio.h>
 #include <limits.h>
 #include <float.h>
 
-int main ()
-{
+int main () {
   short z = 200*200;
   int x = 49000*49000;
   long a = 20000000000*3000000000;
@@ -18,13 +19,4 @@ int main ()
   printf ("wynik = %f\n", c);
   printf ("wynik = %lf\n", y);
   printf ("wynik = %Lf\n", d);
-  return 0;
 }
-
-/*double i;
-  for(i = 0; i != 1; i = i+0.1)
-  {
-  if(i<3)
-  printf("Dziala.. %lf\n", i);
-  return 0;
-}*/
