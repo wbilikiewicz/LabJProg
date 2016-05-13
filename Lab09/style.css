@@ -1,6 +1,6 @@
 /*PODSTAWOWE USTAWIENIA*/
 body {font-family: "Comic Sans MS", cursive, sans-serif; background: linear-gradient(236deg, #98e7ff, #d4d4d4); }
-h1 {font-size: 100px; text-align: center; text-decoration: underline; text-transform: capitalize; letter-spacing: 3px; word-spacing: 10px; text-shadow: 3px 3px #621d1d;} 
+h1 {font-size: 50px; text-align: center; text-decoration: underline; text-transform: capitalize; letter-spacing: 3px; word-spacing: 10px; text-shadow: 3px 3px #621d1d;} 
 p  {width: 198px;height: 5px;margin-top: 0px; font-size: 20px; }
 h2 {font-size: 50px; text-align: center; text-decoration: underline;}
 h3 {font-size: 25px; text-align: center; text-decoration: none;}
