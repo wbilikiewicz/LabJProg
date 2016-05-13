@@ -1,3 +1,8 @@
+/*Napisać programy testujące działanie operatorów z efektami ubocznymi w różnych sytuacjach, od których może zależeć wynik działania. Np.
+  *a[i++] = 0;   oraz   a[++i] = 0;
+  *y = (x += 2);
+  *z = (x %= 3) + (x %= 4);*/
+
 #include <stdio.h>
 
 int main(){
