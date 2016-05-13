@@ -1,9 +1,13 @@
+/* Sprawdzić, wykonując odpowiednie testy, jak działają operacje rzutowania z typów ,,mniejszych'' do ,,większych'' i odwrotnie. Na przykład, czemu są równe:
+    * (int)FLT_MAX
+    * (int)DBL_MAX
+    * (double)LDBL_MAX */
+  
 #include <stdio.h>
 #include <limits.h>
 #include <float.h>
 
-int main()
-{
+int main() {
   printf("FLT_MAX -> (int)FLT_MAX:\n%e -> %i\n\n", FLT_MAX, (int)FLT_MAX);
   //wyznacza maksymalna (czyli jak najblizsza zadanej(float)) liczbe w innym typie (int)
   printf("INT_MAX -> (float)INT_MAX:\n%i -> %e\n\n", INT_MAX, (float)INT_MAX);
@@ -21,5 +25,4 @@ int main()
   //wypisuje maksymalna wartosc longa(float > long)
   printf("INT_MAX -> (float)INT_MAX:\n%i -> %e\n\n", INT_MAX, (float)INT_MAX);
   //wypisuje maksymalna wartosc inta (float > int)
-  return 0;
 }
