@@ -65,7 +65,13 @@ S. Sokołowski
  	* [x] [Zad04.c](Lab08/Zad04.c)
 
 1. [Laboratorum 09] (/Lab09)
- 	* [x] [Zad01.c](Lab09/Zad01.c)
- 	* [x] [Zad02.c](Lab09/Zad02.c)
- 	* [x] [Zad03.c](Lab09/Zad03.c)
- 	* [x] [Zad04.c](Lab09/Zad04.c)
+ 	* [x] [Zad01.html](Lab09/Zad01.html)
+ 	* [x] [Zad02.html](Lab09/Zad02.html)
+ 	* [x] [Zad03.html](Lab09/Zad03.html)
+ 	* [x] [glowna.html](Lab09/glowny.html)
+ 	* [x] [style.css](Lab09/style.css)
+ 
+1. [Laboratorum 13] (/Lab13)
+ 	* [x] [Zad01.c](Lab13/Zad01.c)
+ 	* [x] [Zad02.c](Lab13/Zad02.c)
+ 	* [x] [Zad03.c](Lab13/Zad03.c)
