@@ -1,11 +1,18 @@
+/*Sprawdzić i wyjaśnić działanie następujących fragmentów programów:
+    * a = b = c = d = 0;
+    * for (i=0; i<N; a[i++]=i);
+    * for (i=0; i<N; a[++i]=i);
+    * i=1; while ((i*=2)<N); */
+      
 #include <stdio.h>
+
 int main(){
 int a,b,c,d,i = 0,N = 5;
 int tab[6];
 
   a = b = c = d = 0;
   printf("%d %d %d %d \n", a, b, c, d);
-  // znak przypisania ��czy od lewej do prawej zatem wynik = 0
+  // znak przypisania łączy od lewej do prawej zatem wynik = 0
 
   for (i=0; i<N; tab[i++]=i)
     printf("na miejscu %d znajduje się liczba %d \n", i, tab[i]);
@@ -20,7 +27,5 @@ int tab[6];
     printf(" %d \n", i);
   // dopóki i < N, i jest mnożone razy 2 i drukowane na ekran
   // wynik: 2, 4
-
-  return 0;
 }
 
