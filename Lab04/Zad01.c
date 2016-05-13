@@ -1,32 +1,28 @@
+/* Opracować zestaw operacji na liczbach zespolonych potrzebny do prawidłowego działania tego programu. W tym celu należy prototypy (nagłówki) podanych tam funkcji, realizujących działania, zastąpić lub uzupełnić pełnymi definicjami działań.
+Oczywiście dla napisania tych funkcji, potrzebne jest zastosowanie własnej wiedzy o liczbach zespolonych (np. z algebry).*/
+
 #include<math.h>
 #include<ctype.h>
 #include<stdlib.h>
-
 /****************************************************************/
 // DEFINICJA TYPU LICZB ZESPOLONYCH:
-
 typedef struct {
   double rea, ima;
 }  zespol;
-
 /****************************************************************/
 // POMOCNICZE:
-
 void  err(char s[]) {  // -- sygnalizacja bledu wejscia
   printf("\n !!! FUNKCJA zesp_get: %s !!!\n\n", s);
   exit(1);
 }
-
 /****************************************************************/
 // INICJALIZACJE oraz WEJSCIE-WYJSCIE:
-
 zespol  zesp_zestawic (double r, double i) {
     // zestawienie liczby zespolonej z dwoch rzeczywistych
   zespol z;
   z.rea = r;  z.ima = i;
   return z;
 }
-
 zespol  zesp_get (void) {
     /* wczytanie liczby zespolonej; powinna skladac sie z dwoch
        rzeczywistych, oraz plusa lub minusa miedzy nimi, zaczynac sie od
@@ -62,10 +58,8 @@ void  zesp_print (zespol z) { // drukowanie liczby zespolonej
   else
     printf("(%.2lf-%.2lfi)", z.rea, -z.ima);
 }
-
 /****************************************************************/
 // DZIALANIA:
-
 zespol  zesp_dodac (zespol z1, zespol z2){
   zespol z;
   z.rea = z1.rea + z2.rea;
@@ -100,23 +94,19 @@ zespol euler(){
     z.rea = cos(M_PI);
     z.ima = sin(M_PI);
     return z;
-
 }
-
 zespol jedynka(){
 	zespol jeden;
 	jeden.rea = 1;
 	jeden.ima = 0;
 	return jeden;
 }
-
 zespol zero(){
 	zespol zero;
 	zero.rea = 0;
 	zero.ima = 0;
 	return zero;
 }
-
 zespol zesp_exp(zespol z){
 	zespol suma = zero();
 	zespol skl = jedynka();
@@ -133,11 +123,8 @@ int main () {
   zespol leuler = euler();
   zespol ljedynka = jedynka();
   zespol lew_str = zesp_dodac(zesp_exp(pi_i),ljedynka); 
-
-
   printf("\n z1 == "); z1 = zesp_get();
   printf(" z2 == "); z2 = zesp_get();
-
   printf("\n z1+z2 == "); zesp_print(zesp_dodac(z1, z2));
   printf("\n z1-z2 == "); zesp_print(zesp_odjac(z1, z2));
   printf("\n z1*z2 == "); zesp_print(zesp_razy(z1, z2));
@@ -150,10 +137,8 @@ int main () {
   printf(" = ");
   zesp_print(zesp_dodac(leuler, ljedynka));
   printf("\n");
-
   zesp_print(zesp_exp(leuler));
   printf("\n");
   zesp_print(lew_str);
   printf("\n");
-
 }
