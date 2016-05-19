@@ -83,7 +83,7 @@ void  sortuj_spis() {
   int opcja;
   printf("Jak chcesz posortowaæ spis? (1) nazwisko, (2) imie, (3) pensja : \n");
   scanf("%d",&opcja);
-  qsort_r ( spis, IL_OSOB, sizeof(osoba), compare, &opcja);
+  qsort_r(spis, IL_OSOB, sizeof(osoba), compare, &opcja);
 }
 
 //=======================================================
@@ -115,7 +115,6 @@ int  znajdz_nazwisko (char *na, char *im, int *p)
 		return 1;
 		}
 	}
-	return 0;
 }
 
 //=======================================================
@@ -130,7 +129,6 @@ int  znajdz_imie (char *im, char *na, int *p)
 		return 1;
 		}
 	}
-	return 0;
 }
 
 //=======================================================
@@ -169,5 +167,4 @@ int main (int argc, char *argv[]) {
   }  while (tolower(odpowiedz) != 'q');
 
   printf("\n DZIEKUJE.\n\n");
-
 }

@@ -1,0 +1,43 @@
+body {font-family: "Comic Sans MS", cursive, sans-serif; background: linear-gradient(236deg, #98e7ff, #d4d4d4); }
+h1 {font-size: 70px; text-align: center; text-decoration: underline; text-transform: capitalize; letter-spacing: 3px; word-spacing: 10px; text-shadow: 3px 3px #621d1d;}
+
+#container {width: 1050px; margin: 0 auto;}
+#menu {display: table; padding: 0 20px 0; margin: 0 auto; overflow: hidden; font-size: 20; background: #242424;}
+#menu li {list-style-type: none; margin: 0 auto; float: left; }
+#menu li:hover {background: #404040;}
+#menu li a {display: block; color: silver; text-decoration: none; padding: 10px 20px 10px;}
+#menu li a:hover {background: #404040; color: white;}
+#menu li li a {width: 170px;}
+#menu li ul {overflow: hidden; display: none; background: #242424;}
+#menu li:hover ul {position: absolute; padding: 0; display: block; width: 200px;}
+#menu *:hover {transition: 0.5s ease-in;}
+
+#style
+{
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+}
+.style1
+{
+        margin: 10px;
+        width: 840px;
+        height: 244px;
+        background-color: #80bfff;
+        text-align: center;
+        padding: 30px;
+}
+.style2
+{
+        width: 415px;
+        height: 244px;
+        text-align: center;
+        float: left;
+}
+.style3
+{
+        width: 415px;
+        height: 244px;
+        text-align: center;
+        float: left;
+}

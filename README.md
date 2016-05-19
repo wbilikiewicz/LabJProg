@@ -1,7 +1,7 @@
-## Laboratorium JÄ™zyka C, 2016/17
+## Laboratorium Jêzyka C, 2016/17
 
-S. SokoÅ‚owski
-[JÄ™zyki programowania, rok 1](https://inf.ug.edu.pl/~stefan/Dydaktyka/JezProg/)
+S. Soko³oowski
+[Jêzyki programowania, rok 1](https://inf.ug.edu.pl/~stefan/Dydaktyka/JezProg/)
 
 1. [Laboratorium 01]  (/Lab01):
 
@@ -47,13 +47,12 @@ S. SokoÅ‚owski
 
 1. [Laboratorum 05] (/Lab05)
  	* [x] [Zad01.c](Lab05/Zad01.c)
- 	* [x] [Zad02.c](Lab05/Zad02.c) -
- 	* [x] [Zad02A.c](Lab05/Zad02new.c) -
+ 	* [x] [Zad02.c](Lab05/Zad02.c)
 
 1. [Laboratorum 06] (/lab06)
  	* [x] [Zad01.c](Lab06/Zad01.c)
-  	* [x] [glowny.c](Lab06/glowny.c) -
-  	* [x] [funkcje.c](Lab06/funkcje.c) -
+  	* [x] [glowny.c](Lab06/glowny.c)
+  	* [x] [funkcje.c](Lab06/funkcje.c)
   	* [x] [funkcje.h](Lab06/funkcje.h)
 
 1. [Laboratorum 07] (/Lab07)
