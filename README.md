@@ -67,11 +67,11 @@ S. Soko≈Çowski
  	* [x] [Zad04.c](Lab08/Zad04.c)
 
 1. [Laboratorum 09] (/Lab09)
- 	* [x] [Zad01.php](Lab09/Zad01.php) - dzia≥a prawid≥owo
- 	* [x] [Zad02.php](Lab09/Zad02.php) - dzia≥a prawid≥owo
- 	* [x] [Zad03.php](Lab09/Zad03.php) - dzia≥a prawid≥owo
+ 	* [x] [Zad01.php](Lab09/Zad01.php) - dzia≈Ça prawid≈Çowo
+ 	* [x] [Zad02.php](Lab09/Zad02.php) - dzia≈Ça prawid≈Çowo
+ 	* [x] [Zad03.php](Lab09/Zad03.php) - dzia≈Ça prawid≈Çowo
  
 1. [Laboratorum 13] (/Lab13)
  	* [x] [Zad01.c](Lab13/Zad01.c)
  	* [x] [Zad02.c](Lab13/Zad02.c)
- 	* [x] [Zad03.c](Lab13/Zad03.c) - nie dokoÒczone
+ 	* [x] [Zad03.c](Lab13/Zad03.c) - nie doko≈Ñczone
