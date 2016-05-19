@@ -7,7 +7,7 @@ dla zmiennej x zadeklarowanej kolejno jako float, double i long double. */
 #include <stdio.h>
 
 int main() {
-  int l = 1;
+  int l = 1, k = 0;
   printf("Float:\n");
   float a = 1.0;
   while(1.0 + a > 1.0) {

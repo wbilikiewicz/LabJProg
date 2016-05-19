@@ -1,23 +1,34 @@
-<?php
-  error_reporting(0);
-	$digit_one = $_POST['liczba1'];
-	$digit_two = $_POST['liczba2'];
-	$op = $_POST['znak'];
-	$result = "";
-	switch ($op)
-	{
-		case "+":
-			$result = $digit_one + $digit_two;
-			break;
-		case "-":
-			$result = $digit_one - $digit_two;
-			break;
-		case "*":
-			$result = $digit_one * $digit_two;
-			break;
-		case "/":
-			$result = $digit_one / $digit_two;
-			break;
-			}
-	echo '<br/>'.'Wynik: '.$result;
-?>
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>zad 1</title>
+</head>
+
+<body>
+
+	<h1> Kalkulator </h1>
+	<form action="wynik.php" method="post">
+		<table>
+			<tr>
+			<td>
+				<input type="number" name="arg1"/>
+			</td>
+			<td>
+				<input type="radio" name="op" value="+"> <b>+</b><br>
+				<input type="radio" name="op" value="-"> <b>&minus;</b><br>
+				<input type="radio" name="op" value="*"> <b>&middot;</b><br>
+				<input type="radio" name="op" value="/"> <b>/</b><br>
+			</td>
+			<td>
+				<input type="number" name="arg2" />
+			</td>
+			<td>
+				<input type="submit" value="==">
+			<td>
+			</tr>
+		</table>
+
+
+</body>
+</html>

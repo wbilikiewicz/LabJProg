@@ -29,5 +29,4 @@ int main()
     printf ("\n");
     scanf("%c", &c);
   }
-  return 0;
 }

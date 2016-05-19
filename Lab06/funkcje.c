@@ -10,14 +10,16 @@ Boolean  blad (char s[]) {
 void  we (char nazwa[]) {
   if (poziom > 0) {
     poziom++;
-    for (int i=0; i<poziom; i++)  printf("  ");
+    int i = 0;
+    for (i=0; i<poziom; i++)  printf("  ");
     printf ("WEJSCIE DO %s\n", nazwa);
   }
 }
 
 void  wy (char nazwa[]) {
   if (poziom > 0) {
-    for (int i=0; i<poziom; i++)  printf("  ");
+  	int i = 0;
+    for (i=0; i<poziom; i++)  printf("  ");
     printf ("WYJSCIE Z %s\n", nazwa);
     poziom--;
   }

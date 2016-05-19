@@ -19,12 +19,12 @@ S. Soko≈Çowski
   	* [x] [Zad01.c](Lab02/Zad01.c)
   	* [x] [Zad02.c](Lab02/Zad02.c)
   	* [x] [Zad02A.c](Lab02/Zad02A.c)
+  	* [x] [Zad03A.c](Lab02/Zad03A.c)
+  	* [x] [Zad03B.c](Lab02/Zad03B.c)
 
 1. [Laboratorium 03] (/Lab03)
- 	* [x] [Zad01.c](Lab03/Zad01.c)
- 	* [x] [Zad01A.c](Lab03/Zad01A.c)
- 	* [x] [Zad01B.c](Lab03/Zad01B.c) 
-	* [x] [Zad02.c](Lab03/Zad02.c)
+ 	* [x] [Zad01.c](Lab03/Zad01.c) 
+	* [x] [Zad02.c](Lab03/Zad02.c) - Warning [-Woverflow]
 	* [x] [Zad03.c](Lab03/Zad03.c)
 	* [x] [Zad04.c](Lab03/Zad04.c)
 
@@ -42,16 +42,18 @@ S. Soko≈Çowski
 
 
 1. [Laboratorium 04](/Lab04)
-  	* [x] [Zad01.c](Lab04/Zad01.c)
+  	* [x] [Zad01.c](Lab04/Zad01.c) - Warning 
+  	* [x] [Zad02.c](Lab04/Zad02.c) - Warning [-Wwrite-strings]
 
 1. [Laboratorum 05] (/Lab05)
  	* [x] [Zad01.c](Lab05/Zad01.c)
- 	* [x] [Zad02.c](Lab05/Zad02.c)
+ 	* [x] [Zad02.c](Lab05/Zad02.c) -
+ 	* [x] [Zad02A.c](Lab05/Zad02new.c) -
 
 1. [Laboratorum 06] (/lab06)
  	* [x] [Zad01.c](Lab06/Zad01.c)
-  	* [x] [glowny.c](Lab06/glowny.c)
-  	* [x] [funkcje.c](Lab06/funkcje.c)
+  	* [x] [glowny.c](Lab06/glowny.c) -
+  	* [x] [funkcje.c](Lab06/funkcje.c) -
   	* [x] [funkcje.h](Lab06/funkcje.h)
 
 1. [Laboratorum 07] (/Lab07)
@@ -65,13 +67,10 @@ S. Soko≈Çowski
  	* [x] [Zad04.c](Lab08/Zad04.c)
 
 1. [Laboratorum 09] (/Lab09)
- 	* [x] [Zad01.html](Lab09/Zad01.html)
- 	* [x] [Zad02.html](Lab09/Zad02.html)
- 	* [x] [Zad03.html](Lab09/Zad03.html)
- 	* [x] [glowna.html](Lab09/glowna.html)
- 	* [x] [style.css](Lab09/style.css)
+ 	* [x] [Zad01.php](Lab09/Zad01.php) - dzia≥a prawid≥owo
+ 	* [x] [Zad02.php](Lab09/Zad02.php) - dzia≥a prawid≥owo
+ 	* [x] [Zad03.php](Lab09/Zad03.php) - dzia≥a prawid≥owo
  
 1. [Laboratorum 13] (/Lab13)
  	* [x] [Zad01.c](Lab13/Zad01.c)
  	* [x] [Zad02.c](Lab13/Zad02.c)
- 	* [x] [Zad03.c](Lab13/Zad03.c)

@@ -3,15 +3,12 @@
 #include <stdio.h>
 
 int main () {
-  FILE *fp;
   char znak;
   int c = 0;
   int k, i;
-  fp = fopen("/home/pracinf/stefan/public_html/Dydaktyka/JezProg/Slajdy/Labs05/baza_danych", "r");
-  while (znak != EOF) {
-    znak = fgetc(fp);
+  while ((znak = getchar()) != EOF) {
     c = (int) znak;
-    printf ("%c%d", znak, c);
+    printf ("%c%d\n", znak, c);
     for (i = 7; i >= 0; i--) {
       k = c >> i;
       if(k&1) {
@@ -21,5 +18,6 @@ int main () {
         printf ("0");
       }
     }
+    printf("\n");
   }
 }

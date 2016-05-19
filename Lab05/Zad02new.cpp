@@ -1,24 +1,3 @@
-// Ten program obs³uguje du¿y spis osób opisanych struktur¹:
-//
-//   typedef struct {
-//     char imie[IMIE_MAX+1];
-//     char nazwisko[NAZW_MAX+1];
-//     int pensja;
-//   } osoba;
-//    osoba spis[IL_OSOB];
-// Jego inicjalizacja sk³ada siê z wywo³ania funkcji:
-// utworz_spis -- napisanej przeze mnie, mo¿na do niej nie zagl¹daæ;
-// sortuj_spis -- któr¹ trzeba napisaæ samemu.
-// Po inicjalizacji program pyta o nazwisko lub imiê osoby i znajduje w spisie brakuj¹ce dane na jej temat: imiê, nazwisko i pensjê.
-// Nale¿y napisaæ cia³a funkcji znajdz_nazwisko oraz znajdz_imie -- ich nag³ówki i komentarze opisuj¹ce sposób dzia³ania s¹ w programie podane.
-
-// W pierwszej wersji mo¿na nie realizowaæ funkcji sortuj_spis, a wyszukiwanie zorganizowaæ jakkolwiek.
-//  W drugiej (lepszej) wersji zrobiæ funkcjê sortuj_spis i w wyszukiwaniu wg nazwisk wykorzystaæ fakt, ¿e spis jest uporz¹dkowany.
-// bsearch
-// rozwiazac powtarzanie siê rekordów !!!
-// binki pointer
-// nazwa pliku do, ktorego bêd¹ zapisane wyniki.
-
 #include<stdio.h>
 #include<string.h>
 #include<ctype.h>
@@ -41,9 +20,8 @@ osoba spis[IL_OSOB];
 void  utworz_spis(char *nazwa) {
   FILE* baza =
     fopen(nazwa,"r");
-    int i = 0;
   if (baza == NULL) printf("\n ZLE\n\n");
-  for (i=0; i<IL_OSOB; i++) {
+  for (int i=0; i<IL_OSOB; i++) {
     fscanf(baza, "%s", spis[i].imie);
     fscanf(baza, "%s", spis[i].nazwisko);
     fscanf(baza, "%i", &spis[i].pensja);
@@ -83,7 +61,7 @@ void  sortuj_spis() {
   int opcja;
   printf("Jak chcesz posortowaæ spis? (1) nazwisko, (2) imie, (3) pensja : \n");
   scanf("%d",&opcja);
-  qsort_r ( spis, IL_OSOB, sizeof(osoba), compare, &opcja);
+  qsort_r (spis, IL_OSOB, sizeof(osoba), compare, &opcja);
 }
 
 //=======================================================
@@ -95,8 +73,7 @@ void spis_do_pliku() {
   if( !fp ) {
     printf("B³¹d odczytu pliku");
   }
-  int i = 0;
-    for(i = 0; i < IL_OSOB; ++i) {
+    for( int i = 0; i < IL_OSOB; ++i) {
       if(spis[i].pensja)
         fprintf(fp,"%s %s %i\n",spis[i].imie, spis[i].nazwisko, spis[i].pensja);
       else continue;
@@ -107,8 +84,7 @@ void spis_do_pliku() {
 int  znajdz_nazwisko (char *na, char *im, int *p)
 {
   // bsearch (&na, spis.nazwisko, sizeof(spis.nazwisko),  )
-  int i = 0;
-	for(i = 0; i < IL_OSOB; ++i){
+	for(int i = 0; i < IL_OSOB; ++i){
 		if(strcmp( spis[i].nazwisko, na) == 0){
 		strcpy( im, spis[i].imie );
 		*p = spis[i].pensja;
@@ -122,8 +98,8 @@ int  znajdz_nazwisko (char *na, char *im, int *p)
 //po³aczyæ znajdz nazwisko i znajdz imie
 int  znajdz_imie (char *im, char *na, int *p)
 {
-	int i = 0;
-	for(i = 0; i < IL_OSOB; ++i ){
+
+	for( int i = 0; i < IL_OSOB; ++i ){
 		if( strcmp( spis[i].imie, im) == 0 ){
 		strcpy( na, spis[i].nazwisko );
 		*p = spis[i].pensja;
