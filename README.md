@@ -74,3 +74,4 @@ S. SokoÅ‚owski
 1. [Laboratorum 13] (/Lab13)
  	* [x] [Zad01.c](Lab13/Zad01.c)
  	* [x] [Zad02.c](Lab13/Zad02.c)
+ 	* [x] [Zad03.c](Lab13/Zad03.c) - nie dokoñczone
