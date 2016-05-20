@@ -57,7 +57,7 @@ S. Sokołowski
 
 1. [Laboratorum 07] (/Lab07)
  	* [x] [Zad01.c](Lab07/Zad01.c)
-        * [x] [Zad01A.c](Lab07/Zad01A.c)
+       * [x] [Zad01A.c](Lab07/Zad01A.c)
  	* [x] [Zad02.c](Lab07/Zad02.c)
 
 1. [Laboratorum 08] (/Lab08)
