@@ -1,7 +1,7 @@
-## Laboratorium J�zyka C, 2016/17
+## Laboratorium Języka C, 2016/17
 
-S. Soko�oowski
-[J�zyki programowania, rok 1](https://inf.ug.edu.pl/~stefan/Dydaktyka/JezProg/)
+S. Sokołoowski
+[Języki programowania, rok 1](https://inf.ug.edu.pl/~stefan/Dydaktyka/JezProg/)
 
 1. [Laboratorium 01]  (/Lab01):
 
@@ -66,11 +66,24 @@ S. Soko�oowski
  	* [x] [Zad04.c](Lab08/Zad04.c)
 
 1. [Laboratorum 09] (/Lab09)
- 	* [x] [Zad01.php](Lab09/Zad01.php) - działa prawidłowo
- 	* [x] [Zad02.php](Lab09/Zad02.php) - działa prawidłowo
- 	* [x] [Zad03.php](Lab09/Zad03.php) - działa prawidłowo
+ 	* [x] [Zad01.php](Lab09/Zad01.php) - dziaĹ‚a prawidĹ‚owo
+ 	* [x] [Zad02.php](Lab09/Zad02.php) - dziaĹ‚a prawidĹ‚owo
+ 	* [x] [Zad03.php](Lab09/Zad03.php) - dziaĹ‚a prawidĹ‚owo
  
 1. [Laboratorum 13] (/Lab13)
  	* [x] [Zad01.c](Lab13/Zad01.c)
  	* [x] [Zad02.c](Lab13/Zad02.c)
  	* [x] [Zad03.c](Lab13/Zad03.c) - nie dokończone
+
+1. [Laboratorum 14] (/Lab14)
+ 	* [x] [Zad01.c](Lab14/Zad01.c)
+
+1. [Laboratorum 15] (/Lab15)
+ 	* [x] [Zad01.c](Lab15/Zad01.c)
+
+ Ulubione zadania
+* [x] [Zad01.c](Lab14/Zad01.c)
+* [x] [Zad01.c](Lab15/Zad01.c)
+* [x] [Zad01.php](Lab09/Zad01.php)
+* [x] [Zad02.php](Lab09/Zad02.php)
+* [x] [Zad03.php](Lab09/Zad03.php)
