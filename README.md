@@ -66,9 +66,9 @@ S. Sokołoowski
  	* [x] [Zad04.c](Lab08/Zad04.c)
 
 1. [Laboratorum 09] (/Lab09)
- 	* [x] [Zad01.php](Lab09/Zad01.php) - dziaĹ‚a prawidĹ‚owo
- 	* [x] [Zad02.php](Lab09/Zad02.php) - dziaĹ‚a prawidĹ‚owo
- 	* [x] [Zad03.php](Lab09/Zad03.php) - dziaĹ‚a prawidĹ‚owo
+ 	* [x] [Zad01.php](Lab09/Zad01.php) - działa prawidłowo
+ 	* [x] [Zad02.php](Lab09/Zad02.php) - działa prawidłowo
+ 	* [x] [Zad03.php](Lab09/Zad03.php) - działa prawidłowo
  
 1. [Laboratorum 13] (/Lab13)
  	* [x] [Zad01.c](Lab13/Zad01.c)
