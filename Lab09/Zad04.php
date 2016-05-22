@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="pl">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -6,7 +6,7 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<h1> Witam na mojej stronie </h1>
+<h1> Licznik klikniec </h1>
 <div id="container">
 	<ul id="menu">
 		<li><a>Labolatroium 9</a>
@@ -38,5 +38,18 @@
 		</li>
   </ul>
 </div>
+<div id="style">
+	<div class = "style1">
+    <form action="test.php">
+    <input type="hidden" name="ilosc" value="
+    <?php
+    $ile=$_REQUEST[’ilosc’];
+    if (isset($ile)) $ile++; else $ile=0;
+    ?>
+    <?php print($ile) ?>">
+    <input type="submit" value="KLIKNIJ!">
+    </form>
+  </div>
+</div>    
 </body>
 </html>
