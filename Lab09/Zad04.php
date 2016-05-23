@@ -47,7 +47,7 @@
     if (isset($ile)) $ile++; else $ile=0;
     ?>
     <?php print($ile) ?>">
-    <input type="submit" value="KLIKNIJ!">
+    <input type="submit" value="KLIKNIJ!"> 
     </form>
   </div>
 </div>    

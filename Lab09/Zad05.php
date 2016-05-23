@@ -1,22 +1,3 @@
-<?php
- if (isset($_REQUEST['funkcja'])) {
-  $wydruk = '';
-  $wydruk .= '#!/bin/bash'.PHP_EOL;
-  $wydruk .= 'gnuplot << EOF'.PHP_EOL;
-  $wydruk .= 'set terminal png truecolor enhanced'.PHP_EOL;
-  $wydruk .= 'set output "rys.png"'.PHP_EOL;
-  $wydruk .= 'splot ' . $_REQUEST['funkcja'].PHP_EOL;
-  $wydruk .= 'EOF'.PHP_EOL;
-  $pl = fopen("rysunek.sh", "w");
-  fprintf($pl, "%s", $wydruk);
-  fclose($pl);
-  exec('chmod 755 rysunek.sh');
-  exec('./rysunek.sh');
-  exec('chmod 644 rys.png');
-  print('<img src="rys.png"><br><br>'.PHP_EOL);
- }
-?>
-
 <!doctype html>
 <html lang="pl">
 <head>
@@ -62,6 +43,24 @@
     <form action="10-rysowanie_wykresow.php" method=post>
     Funkcja: <input type="text" name="funkcja"><br>
     <input type="submit" value="JUZ">
+    <?php
+      if (isset($_REQUEST['funkcja'])) {
+      $wydruk = '';
+      $wydruk .= '#!/bin/bash'.PHP_EOL;
+      $wydruk .= 'gnuplot << EOF'.PHP_EOL;
+      $wydruk .= 'set terminal png truecolor enhanced'.PHP_EOL;
+      $wydruk .= 'set output "rys.png"'.PHP_EOL;
+      $wydruk .= 'splot ' . $_REQUEST['funkcja'].PHP_EOL;
+      $wydruk .= 'EOF'.PHP_EOL;
+      $pl = fopen("rysunek.sh", "w");
+      fprintf($pl, "%s", $wydruk);
+      fclose($pl);
+      exec('chmod 755 rysunek.sh');
+      exec('./rysunek.sh');
+      exec('chmod 644 rys.png');
+      print('<img src="rys.png"><br><br>'.PHP_EOL);
+ }
+?>
     </form>
   </div>
 </div>

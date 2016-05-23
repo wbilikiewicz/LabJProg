@@ -1,6 +1,6 @@
 ## Laboratorium Języka C, 2016/17
 
-S. Sokołoowski
+S. Sokołowski
 [Języki programowania, rok 1](https://inf.ug.edu.pl/~stefan/Dydaktyka/JezProg/)
 
 1. [Laboratorium 01]  (/Lab01):
@@ -51,9 +51,9 @@ S. Sokołoowski
 
 1. [Laboratorum 06] (/lab06)
  	* [x] [Zad01.c](Lab06/Zad01.c)
-  	* [x] [glowny.c](Lab06/glowny.c)
-  	* [x] [funkcje.c](Lab06/funkcje.c)
-  	* [x] [funkcje.h](Lab06/funkcje.h)
+  * [x] [glowny.c](Lab06/glowny.c)
+  * [x] [funkcje.c](Lab06/funkcje.c)
+  * [x] [funkcje.h](Lab06/funkcje.h)
 
 1. [Laboratorum 07] (/Lab07)
  	* [x] [Zad01.c](Lab07/Zad01.c)
@@ -69,7 +69,7 @@ S. Sokołoowski
  	* [x] [Zad01.php](Lab09/Zad01.php) - działa prawidłowo
  	* [x] [Zad02.php](Lab09/Zad02.php) - działa prawidłowo
  	* [x] [Zad03.php](Lab09/Zad03.php) - działa prawidłowo
-        * [x] [Link do zadań php](http://sigma.ug.edu.pl/~wdziurdzia/)
+  * [x] [Link do zadań php](http://sigma.ug.edu.pl/~wdziurdzia/)
  
 1. [Laboratorum 13] (/Lab13)
  	* [x] [Zad01.c](Lab13/Zad01.c)
