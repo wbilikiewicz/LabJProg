@@ -83,7 +83,7 @@ S. Sokołowski
  	* [x] [Zad01.c](Lab15/Zad01.c)
 
  Ulubione zadania:
-* [x] [Lab04 Zad01.c](Lab04/Zad01.c) - 
+* [x] [Lab04 Zad01.c](Lab04/Zad01.c) 
 * [x] [Lab07 Zad01.c](Lab07/Zad01.c)
 * [x] [Lab07 Zad02.c](Lab07/Zad02.c)
 * [x] [Lab09 Zad01.php](Lab09/Zad01.php)
