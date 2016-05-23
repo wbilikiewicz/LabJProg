@@ -83,10 +83,11 @@ S. Sokołowski
  	* [x] [Zad01.c](Lab15/Zad01.c)
 
  Ulubione zadania:
-* [x] [Zad01.c](Lab14/Zad01.c)
-* [x] [Zad01.c](Lab07/Zad01.c)
-* [x] [Zad02.c](Lab07/Zad02.c)
-* [x] [Zad01.php](Lab09/Zad01.php)
-* [x] [Zad02.php](Lab09/Zad02.php)
-* [x] [Zad03.php](Lab09/Zad03.php)
+* [x] [Lab04 Zad01.c](Lab04/Zad01.c) - 
+* [x] [Lab07 Zad01.c](Lab07/Zad01.c)
+* [x] [Lab07 Zad02.c](Lab07/Zad02.c)
+* [x] [Lab09 Zad01.php](Lab09/Zad01.php)
+* [x] [Lab09 Zad02.php](Lab09/Zad02.php)
+* [x] [Lab09 Zad03.php](Lab09/Zad03.php)
 * [x] [Link do zadań php](http://sigma.ug.edu.pl/~wdziurdzia/)
+* [x] [Lab14 Zad01.c](Lab14/Zad01.c)
